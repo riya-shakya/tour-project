@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* =============== GLOBAL VARIABLES =============== */
+    --primaryColor: #B8E1FF;
+    --contentColor: #28262C;
+    --headingColor: #456990;
+    --subHeadingColor: #82ABA1;
+    --supportingColor1: #94FBAB;
+    --supportingColor2: #A9FFF7;
+
+    --headingFontFamily: 'Monoton', cursive;
+    --subHeadingFontFamily: 'Akaya Kanadaka', cursive;
+    --contentFontFamily: 'Righteous', cursive;
+
+    --headingSize: 3rem;
+    --subHeadingSize: 3rem;
+    --contentSize: 1rem;
+}
+i{
+    background: var(--contentColor);
+    font-size: var(--subHeadingSize);
+    color: var(--supportingColor2);
+}
+h1{
+    color: var(--headingColor);
+    font-size: var(--headingSize);
+    font-family: var(--headingFontFamily);
+    text-transform: uppercase;
+}
+h2{
+    color: var(--subHeadingColor);
+    font-size: var(--subHeadingSize);
+    font-family: var(--subHeadingFontFamily);
+    text-transform: capitalize;
+}
+p{
+    color: var(--contentColor);
+    font-size: var(--contentSize);
+    font-family: var(--contentFontFamily);
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+.buttons{
+    max-width: 7rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    width: fit-content;
+    background: var(--supportingColor1);
+    color: var(--headingColor);
+    text-transform: capitalize;
+}
