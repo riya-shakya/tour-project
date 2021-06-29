@@ -1,0 +1,57 @@
+/* ============================================= CREDITS ==================================== 
+    Photo by <a href="https://unsplash.com/@insideoutdog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Atul Saini</a> on <a href="https://unsplash.com/s/photos/tour?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+*/
+
+#aboutUs{
+    margin: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#aboutUsImage{
+    margin-top: 1rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    border: 5px solid var(--supportingColor2);
+}
+    
+@media screen and (min-width: 800px ){
+    #aboutUsImage{
+        max-width: 50%;
+        margin-right: 2rem;
+        position:relative;
+        border: none;
+    }
+    #aboutUsImage:before{
+        width: 100%;
+        height: 100%;
+        content: '';
+        background: var(--supportingColor2);
+        border: 5px solid var(--supportingColor3); 
+        position: absolute;
+        top: 8px;
+        left: -20px;
+        z-index: -1;
+    }
+    #aboutUsImage:hover::before{
+        box-sizing: border-box;
+        top: -5px;
+        left: -5px;
+        height: calc(100% + 10px);
+        width: calc( 100% + 10px );
+        transition: var(--transitionTimings);
+    }
+    #exploreButton:hover{
+        color: var(--contentColor);
+        background: #82ABA1;
+        transition: var(--transitionTimings);
+    }
+    #aboutContent{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
