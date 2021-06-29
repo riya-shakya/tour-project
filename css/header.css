@@ -15,14 +15,13 @@ header{
 }
 header p{
     color: whitesmoke;
+    max-width: 30rem;
+    text-align: center;
 }
 header h1{
     color: var(--supportingColor2);
-}
-#exploreTours{
-    background: var(--headingColor);
-    color: white;
-    margin: 0 auto;
+    text-align: center;
+    font-size: 2.5rem;
 }
 #exploreTours:hover{
     color: var(--contentColor);
