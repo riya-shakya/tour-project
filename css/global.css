@@ -6,7 +6,7 @@
 :root{
     /* =============== GLOBAL VARIABLES =============== */
     --primaryColor: #B8E1FF;
-    --contentColor: #28262C;
+    --contentColor: #0D1321;
     --headingColor: #456990;
     --subHeadingColor: #82ABA1;
     --supportingColor1: #94FBAB;
@@ -45,6 +45,12 @@ p{
 img{
     width: 100%;
     object-fit: cover;
+}
+span{
+    font-family: var(--headingFontFamily);
+    color: #1F2041;
+    text-transform: uppercase;
+    font-size: var(--headingSize)
 }
 .buttons{
     max-width: 7rem;
