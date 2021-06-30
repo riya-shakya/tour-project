@@ -12,6 +12,7 @@
     --supportingColor1: #94FBAB;
     --supportingColor2: #A9FFF7;
     --supportingColor3: #6A5B6E;
+    --backgroundColor: #E1F2FE;
 
     --headingFontFamily: 'Monoton', cursive;
     --subHeadingFontFamily: 'Akaya Kanadaka', cursive;
@@ -24,9 +25,9 @@
     --transitionTimings: all 500ms linear;
 }
 i{
-    background: var(--contentColor);
+    background: var(--supportingColor1);
     font-size: var(--subHeadingSize);
-    color: var(--supportingColor2);
+    color: var(--contentColor);
 }
 h1{
     color: var(--headingColor);
@@ -34,6 +35,7 @@ h1{
     font-family: var(--headingFontFamily);
     text-transform: uppercase;
     max-width: 30rem;
+    margin: 1rem;
     word-spacing: 8px;
 }
 h2{
@@ -41,6 +43,13 @@ h2{
     font-size: var(--subHeadingSize);
     font-family: var(--subHeadingFontFamily);
     text-transform: capitalize;
+    max-width: 30rem;
+    margin: 1rem;
+}
+h3{
+    color: var(--supportingColor3);
+    text-transform: capitalize;
+    font-family: var(--contentFontFamily);
     max-width: 30rem;
     margin: 1rem;
 }
