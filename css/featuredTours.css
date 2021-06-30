@@ -1,0 +1,83 @@
+/* ============================ CREDITS ============================== 
+1st image: 
+    Photo by <a href="https://unsplash.com/@ekemmel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eléonore Kemmel</a> on <a href="https://unsplash.com/photos/Ex57cKpwdnE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+2nd image:
+    Photo by <a href="https://unsplash.com/@adri1xplr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adrien</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+3rd image:
+    Photo by <a href="https://unsplash.com/@datingscout?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Datingscout</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+4th image:
+    Photo by <a href="https://unsplash.com/@vitalysacred?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vitaly Sacred</a> on <a href="https://unsplash.com/s/photos/tour?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+*/
+#featuredTours{
+    margin: 2rem;
+}
+#featuredTours h1{
+    margin: 1rem auto;
+    text-align: center;
+}
+#tours figure{
+    background: var(--backgroundColor);
+    margin: 2rem auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 5px 5px 8px black;
+    max-height: 500px;
+    max-width: 500px;
+}
+.featuredImageContainer{
+    position: relative;
+}
+.featuredImageContainer img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 280px;
+}
+.date{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: fit-content;
+    max-width: 200px;
+}
+figcaption .adventureName{
+    display: flex;
+    justify-content: space-between;
+}
+.adventurePlace i{
+    font-size: 30px;
+}
+figcaption .adventurePlace{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+#tours figure:hover{
+    transform: scale(1.02);
+    box-shadow: 7px 7px 10px black;
+    transition: var(--transitionTimings);
+}
+
+@media screen and (min-width: 800px ){
+    #tours{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #tours figure{
+        margin: 1rem;
+        width: calc( (100% / 2) - 2rem);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #tours figure{
+        margin: 0.5rem;
+        width: calc( (100% / 4) - 1rem);
+        max-height: 600px;
+    }
+    /* figure p{
+        margin: 0 0.5rem;
+        font-size: 0.8rem;
+    } */
+}
