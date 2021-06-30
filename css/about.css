@@ -23,6 +23,7 @@
         margin-right: 2rem;
         position:relative;
         border: none;
+        z-index: -1;
     }
     #aboutUsImage:before{
         width: 100%;
@@ -33,7 +34,7 @@
         position: absolute;
         top: 8px;
         left: -20px;
-        z-index: -1;
+        z-index: -2;
     }
     #aboutUsImage:hover::before{
         box-sizing: border-box;
