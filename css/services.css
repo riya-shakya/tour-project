@@ -6,6 +6,11 @@
 #services h1{
     margin: 1rem auto;
 }
+#services i{
+    background: var(--supportingColor1);
+    padding: 0.5rem;
+    border-radius: 10px;
+}
 #servicesContent{
     display: flex;
     flex-direction: column;
