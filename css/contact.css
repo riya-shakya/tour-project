@@ -1,0 +1,38 @@
+#contactUs{
+    margin-top: 5rem;
+    background: var(--supportingColor3);
+    text-align: center;
+    /* background: #107a6c50; */
+}
+#contactUs h2{
+    color: var(--supportingColor2);
+    text-align: center;
+    margin: 1rem auto;
+}
+#contactUs h4{
+    margin: 1rem auto;
+}
+#contactUs input{
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    background: var(--supportingColor2);
+    width: 300px;
+}
+#contactUs input::placeholder{
+    text-transform: capitalize;
+    color: var(--contentColor);
+    font-family: var(--contentFontFamily);
+}
+#contactUs #submit{
+    background: var(--subHeadingColor);
+    color: var(--contentColor);
+    font-family: var(--contentFontFamily);
+    padding: 0.25rem 0.5rem;
+    margin: 1rem;
+}
+#formElements{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}
